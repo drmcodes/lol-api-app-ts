@@ -1,8 +1,5 @@
 {
-    "routes":[
-        {"src": "/", "dest": "/" },
-        {"src": "/champions", "dest": "/" },
-        {"src": "/items", "dest": "/" },
-        {"src": "/runes", "dest": "/" }
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
     ]
 }
