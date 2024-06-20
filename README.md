@@ -1,30 +1,11 @@
-# React + TypeScript + Vite
+# Lol API App with Typescript v2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the second version of lol-api-app but this time written in Typescript-React 
 
-Currently, two official plugins are available:
+## Features
+- Quick introduction to League of Legends and gamemodes.
+- Whole Champion and Item pull display and filter by name and by roles or tags.
+- Rune page with all information related about runes system. (Coming soon)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![hola-ezgif com-video-to-gif-converter](https://github.com/drmcodes/lol-api-app-ts/assets/143167807/ae1af468-64bf-4d1f-b2af-8307be055756)
