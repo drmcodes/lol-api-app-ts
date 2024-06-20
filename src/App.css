@@ -1,0 +1,478 @@
+:root {
+  --primary-color: #22223b;
+  --secondary-color: #4a4e69;
+  --tertiary-color: #9a8c98;
+  --quaternary-color: #c9ada7;
+  --background-color: #f2e9e4;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #f2e9e4;
+}
+
+.menu-item a:hover {
+  color: #fcd966;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f2e9e4;
+}
+
+.logo a:hover {
+  color: #fcd966;
+}
+
+.main-app {
+  background-image: url("../src/img/JINX-DESKTOP.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+}
+
+.content p {
+  color: var(--background-color);
+  margin: 0;
+}
+
+.aboutLeagueH1 {
+  color: #fcd966;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 3px solid var(--tertiary-color);
+  padding: 10px;
+}
+
+.columns-container {
+  display: flex;
+  width: 100%;
+}
+
+.column {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 1.2rem;
+
+  color: #f2e9e4;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fcd966;
+  text-align: center;
+  height: 70%;
+}
+
+.caja {
+  max-width: 1200px;
+  height: auto;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.grid p {
+  margin: 14px;
+  padding: 15px;
+  color: #f2e9e4;
+}
+.grid .gamemode {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f2e9e4;
+}
+
+@media (max-width: 3000px) {
+  .main-app {
+    background-image: url("../src/img/JINX-DESKTOP.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-app {
+    background-image: url("../src/img/JINX-MOBILE.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .menu-item {
+    font-size: 1.2rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+  .column h2 {
+    font-size: 0.7rem;
+  }
+  .column p {
+    font-size: 1rem;
+    color: #f2e9e4;
+  }
+  .grid p {
+    margin: 14px;
+    padding: 15px;
+    color: #f2e9e4;
+  }
+  .grid h3 {
+    margin: 8px;
+  }
+  .caja {
+    min-height: auto;
+    font-size: 1.4rem;
+  }
+}
+
+/* COMPONENTE CHAMPIONS  */
+
+.Champions-container {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+}
+
+.Champions-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 4px;
+  background-color: var(--secondary-color);
+}
+
+.Champions-p {
+  margin: 0 auto;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.Champions-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  width: 142px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  width: 142px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  overflow: hidden;
+}
+button.active {
+  background-color: #fcd966;
+  color: var(--primary-color);
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+/* Items.jsx */
+
+.Items-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.Items-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.Filter-buttons input {
+  padding: 10px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.Filter-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 250px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.Filter-buttons button:hover,
+.Filter-buttons button.active {
+  background-color: #fcd966;
+}
+
+.Item-h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  padding: 10px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.Items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.Item-card {
+  width: 100%;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Item-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.Item-card h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .Items-list {
+    grid-template-columns: 1fr;
+  }
+}
