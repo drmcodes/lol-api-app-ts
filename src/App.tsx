@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import MainPage from "./pages/MainPage";
 import Champions from "./pages/Champions";
 import Items from "./pages/Items";
+import Runes from "./pages/Runes";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/champions" element={<Champions />} />
         <Route path="/items" element={<Items />} />
+        <Route path="/runes" element={<Runes />} />
       </Routes>
     </div>
   );

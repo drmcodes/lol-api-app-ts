@@ -1,4 +1,5 @@
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,18 +8,18 @@ const Navbar = () => {
         <div className="logo">
           <img src="/src/img/favicon.ico" alt="" />
           <p>
-            <a href="http://localhost:5173/">CHAMPION FORGE</a>
+            <Link to="/">CHAMPION FORGE</Link>
           </p>
         </div>
         <ul className="menu">
           <li className="menu-item">
-            <a href="http://localhost:5173/champions">Champions</a>
+            <Link to="/champions">Champions</Link>
           </li>
           <li className="menu-item">
-            <a href="http://localhost:5173/items">Items</a>
+            <Link to="/items">Items</Link>
           </li>
           <li className="menu-item">
-            <a href="http://localhost:5173/runes">Runes</a>
+            <Link to="/runes">Runes</Link>
           </li>
         </ul>
       </nav>
