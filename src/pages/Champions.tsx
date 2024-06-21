@@ -145,7 +145,7 @@ const Champions: React.FC = () => {
           <div className="Champions-p" key={index}>
             <div className="image-container">
               {!images[champion.id] ? (
-                <Skeleton width={300} height={500} />
+                <Skeleton width={150} height={150} />
               ) : (
                 <img
                   src={images[champion.id] || `default-image-url.jpg`}

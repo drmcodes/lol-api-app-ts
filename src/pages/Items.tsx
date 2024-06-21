@@ -44,7 +44,7 @@ const Items: React.FC = () => {
 
   useEffect(() => {
     if (selectedTags.length === 0) {
-      setFilteredItems(items); 
+      setFilteredItems(items);
     } else {
       const filtered = items.filter((item) =>
         selectedTags.every((tag) => item.tags.includes(tag))
